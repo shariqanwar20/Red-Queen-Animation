@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { CloudAnim } from './Components/CloudAnim';
+import { BirdAnim } from './Components/BirdAnim';
+import { PlaneAnim } from './Components/PlaneAnim';
+import roadImg from "./images/road.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-div">
+      <CloudAnim />
+      <BirdAnim />
+      <PlaneAnim />
+      <br />
+      <br />
+      <br />
+      <div className="runway-div">
+          <img src={roadImg} width='1400px' height='150px' alt="runway" />
+      </div>
     </div>
   );
 }
